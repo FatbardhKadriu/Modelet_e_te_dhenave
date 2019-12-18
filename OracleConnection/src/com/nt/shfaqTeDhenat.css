@@ -1,0 +1,14 @@
+
+.label{
+	-fx-text-fill: white;
+	-fx-font-size: 16px;
+}
+.body{
+	-fx-text-fill: white;
+	-fx-font-size: 12px;
+}
+#aid, #ndotesi, #vendi, #vleraMax, #koncentrimi, #KID, #Hid, #hidroStacioni, #distancaNgaGryka, #sipUjeMbledhese, #niveliUjit, #prurjaUjit,  #StacioniID, #dataKoha, #temp, #shtypjaAjrit, #lageshtiaAjrit, #reshjeShiu, #reshjeBore, #insolacioni, #vranesirat
+{
+	-fx-text-fill: rgb(255, 51, 153);
+	-fx-font-size: 18px;
+}

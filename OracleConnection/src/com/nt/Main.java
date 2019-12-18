@@ -20,16 +20,20 @@ public class Main extends Application {
 		Button btnTeDhenatH = new Button("Kliko");
 		Button btnTeDhenatK = new Button("Kliko");
 		Button btnCilesiaAjrit = new Button("Kliko");
+		Button btnNdotesit = new Button("Kliko");
 		Label lbl = new Label("Klikoni per te pare tebelen e Madhesive me njesite perkatese");
 		Label lbl2 = new Label("Klikoni per te pare te dhenat Klimatologjike");
 		Label lbl3 = new Label("Klikoni per te pare te dhenat Hidrometrike");
 		Label lbl4 = new Label("Klikoni per te pare te cilesine e ajrit");
+		Label lbl5 = new Label("Klikoni per te pare te ndotesite ne Prishtine");
+
 
 		pane.setPadding(new Insets(50, 50, 50, 50));
 		pane.addRow(0, lbl, btnMadhesite);
 		pane.addRow(1, lbl2, btnTeDhenatK);
 		pane.addRow(2, lbl3, btnTeDhenatH);
 		pane.addRow(3, lbl4, btnCilesiaAjrit);
+		pane.addRow(4, lbl5, btnNdotesit);
 		pane.setHgap(100);
 		pane.setVgap(50);
 		Scene scene = new Scene(pane, 1000, 600);
@@ -42,10 +46,12 @@ public class Main extends Application {
 		ShfaqTeDhenatH shfaqH = new ShfaqTeDhenatH();
 		ShfaqTeDhenatK shfaqK = new ShfaqTeDhenatK();
 		ShfaqCilesineAjrit cilesiaAjrit = new ShfaqCilesineAjrit();
+		NdotesitClass nd = new NdotesitClass();
 		btnMadhesite.setOnAction(e -> njesite.createStage());
 		btnTeDhenatH.setOnAction(e -> shfaqH.createStage());
 		btnTeDhenatK.setOnAction(e -> shfaqK.createStage());
 		btnCilesiaAjrit.setOnAction(e -> cilesiaAjrit.createStage());
+		btnNdotesit.setOnAction(e -> nd.createStage());
 
 	}
 	public static void main(String[] args) {

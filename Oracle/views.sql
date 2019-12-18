@@ -43,3 +43,8 @@ UPDATE Zhurma_View
     WHERE ZId = 19;
     
 select * from Zhurma_View;
+
+CREATE VIEW NdotesitNeVende AS
+SELECT ndotesi, koncentrimi
+FROM Cilesia_Ajrit c, TABLE(c.Ndotja) n 
+WHERE vendi = 'Prishtinë' 

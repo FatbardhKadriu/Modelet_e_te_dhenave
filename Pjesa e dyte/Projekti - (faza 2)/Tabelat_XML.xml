@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE InstitutiHidrometeorogjik SYSTEM "DTDSkema.dtd">  
+<InstitutiHidrometeorogjik>
+    
+    <!-- Të dhënat nga tabela StacionetMeteorologjike në databazën XML -->
+    <StacionetMeteorologjike id="1">
+        <EmriStacionit>Brezovicë</EmriStacionit>
+        <Kordinatat>
+            <Gjeresia_Gjeografike>42.22169</Gjeresia_Gjeografike>
+            <Gjatesia_Gjeografike>21.00166</Gjatesia_Gjeografike>
+        </Kordinatat>
+        <LartesiaMbidetare>915</LartesiaMbidetare>
+        <PellguLumor>Lepenc</PellguLumor>   
+    </StacionetMeteorologjike>
+    
+    <StacionetMeteorologjike id="2">
+        <EmriStacionit>Dragash</EmriStacionit>
+        <Kordinatat>
+            <Gjeresia_Gjeografike>42.06236</Gjeresia_Gjeografike>
+            <Gjatesia_Gjeografike>20.64678</Gjatesia_Gjeografike>
+        </Kordinatat>
+        <LartesiaMbidetare>1060</LartesiaMbidetare>
+        <PellguLumor>Plavë</PellguLumor>   
+    </StacionetMeteorologjike>
+    
+    <!-- Të dhënat nga tabela TeDhenatKlimatologjike në databazën XML -->
+    <TeDhenatKlimatologjike>
+        <Kid>101</Kid>
+        <StacioniID>1</StacioniID>
+        <KMatje data="15-DEC-2019">
+            <Koha>07:00:00 AM</Koha>
+            <Temperatura>-8.2</Temperatura>
+            <Shtypja_Ajrit>945.4</Shtypja_Ajrit>
+            <Lageshtia_Ajrit>88</Lageshtia_Ajrit>
+            <Reshje_Shiu>0</Reshje_Shiu>
+            <Reshje_Bore>7</Reshje_Bore>
+        </KMatje>
+        <KMatje data="15-DEC-2019">
+            <Koha>2:00:00 PM</Koha>
+            <Temperatura>-5.1</Temperatura>
+            <Shtypja_Ajrit>941.1</Shtypja_Ajrit>
+            <Lageshtia_Ajrit>85</Lageshtia_Ajrit>
+            <Reshje_Shiu>0</Reshje_Shiu>
+            <Reshje_Bore>4</Reshje_Bore>
+        </KMatje>
+        <Insolacioni>3</Insolacioni>
+        <Vranesirat>8</Vranesirat>
+    </TeDhenatKlimatologjike>
+    
+    <TeDhenatKlimatologjike>
+        <Kid>102</Kid>
+        <StacioniID>2</StacioniID>
+        <KMatje data="12-DEC-2019">
+            <Koha>07:00:00 AM</Koha>
+            <Temperatura>-7.2</Temperatura>
+            <Shtypja_Ajrit>888.4</Shtypja_Ajrit>
+            <Lageshtia_Ajrit>78</Lageshtia_Ajrit>
+            <Reshje_Shiu>0</Reshje_Shiu>
+            <Reshje_Bore>2</Reshje_Bore>
+        </KMatje>
+        <KMatje data="12-DEC-2019">
+            <Koha>02:00:00 PM</Koha>
+            <Temperatura>-5.1</Temperatura>
+            <Shtypja_Ajrit>941.1</Shtypja_Ajrit>
+            <Lageshtia_Ajrit>85</Lageshtia_Ajrit>
+            <Reshje_Shiu>0</Reshje_Shiu>
+            <Reshje_Bore>4</Reshje_Bore>
+        </KMatje>
+        <Insolacioni>7</Insolacioni>
+        <Vranesirat>4</Vranesirat>
+    </TeDhenatKlimatologjike>
+    
+    <!-- Të dhënat nga tabela Temperatura_Tokes në databazën XML -->
+    <TemperaturaTokes>
+        <TempID>1</TempID>
+        <StacionId>1</StacionId>
+        <Temperaturat>
+            <Data-Koha>15-DEC-2019 07:00:00 AM</Data-Koha>
+            <Temperatura_Tokes>2.2</Temperatura_Tokes>
+            <Thellesia_Tokes>5</Thellesia_Tokes>
+        </Temperaturat>
+        <Temperaturat>
+            <Data-Koha>15-DEC-2019 02:00:00 PM</Data-Koha>
+            <Temperatura_Tokes>2.9</Temperatura_Tokes>
+            <Thellesia_Tokes>10</Thellesia_Tokes>
+        </Temperaturat>
+    </TemperaturaTokes>
+    
+    
+    <TemperaturaTokes>
+        <TempID>2</TempID>
+        <StacionId>2</StacionId>
+        <Temperaturat>
+            <Data-Koha>15-DEC-2019 07:00:00 AM</Data-Koha>
+            <Temperatura_Tokes>3.9</Temperatura_Tokes>
+            <Thellesia_Tokes>5</Thellesia_Tokes>
+        </Temperaturat>
+        <Temperaturat>
+            <Data-Koha>15-DEC-2019 02:00:00 PM</Data-Koha>
+            <Temperatura_Tokes>7.9</Temperatura_Tokes>
+            <Thellesia_Tokes>100</Thellesia_Tokes>
+        </Temperaturat>
+    </TemperaturaTokes>
+    
+    <!-- Të dhënat nga tabela Stacionet_Hidrometrike në databazën XML -->
+    <StacionetHidrometrike id="124">
+        <Pellgu-Lumor>Drini i Bardhë</Pellgu-Lumor>
+        <Emri-Stacionit>Grykë</Emri-Stacionit>
+        <Lumi>Bistrica e Pejës</Lumi>
+        <Kordinatat>
+            <Gjeresia_Gjeografike>42.66175</Gjeresia_Gjeografike>
+            <Gjatesia_Gjeografike>20.25122</Gjatesia_Gjeografike>
+        </Kordinatat>
+        <Lartesia_Mbidetare>581</Lartesia_Mbidetare>
+    </StacionetHidrometrike>
+    
+    <StacionetHidrometrike id="126">
+        <Pellgu-Lumor>Drini i Bardhë</Pellgu-Lumor>
+        <Emri-Stacionit>Gjakovë</Emri-Stacionit>
+        <Lumi>Ereniku</Lumi>
+        <Kordinatat>
+            <Gjeresia_Gjeografike>42.36954</Gjeresia_Gjeografike>
+            <Gjatesia_Gjeografike>20.42086</Gjatesia_Gjeografike>
+        </Kordinatat>
+        <Lartesia_Mbidetare>341</Lartesia_Mbidetare>
+    </StacionetHidrometrike>
+    
+    <!-- Të dhënat nga tabela Stacionet_Hidrometrike në databazën XML -->
+    <TeDhenatHidrometrike id="15">
+        <HidroStacioniID>1</HidroStacioniID>
+        <DistancaNgaGryka>70</DistancaNgaGryka>
+        <SiperfaqjaUjembledhese>114</SiperfaqjaUjembledhese>
+        <HMatjet>
+            <DataKoha>15-DEC-2019 12:00:00 AM</DataKoha>
+            <NiveliUjit>48</NiveliUjit>
+            <PrurjaUjit>0.6</PrurjaUjit>
+        </HMatjet>
+        <HMatjet>
+            <DataKoha>15-DEC-2019 5:00:00 PM</DataKoha>
+            <NiveliUjit>44</NiveliUjit>
+            <PrurjaUjit>1.2</PrurjaUjit>
+        </HMatjet>
+    </TeDhenatHidrometrike>
+    <TeDhenatHidrometrike id="16">
+        <HidroStacioniID>2</HidroStacioniID>
+        <DistancaNgaGryka>100</DistancaNgaGryka>
+        <SiperfaqjaUjembledhese>114</SiperfaqjaUjembledhese>
+        <HMatjet>
+            <DataKoha>15-DEC-2019 12:00:00 AM</DataKoha>
+            <NiveliUjit>47</NiveliUjit>
+            <PrurjaUjit>0.6</PrurjaUjit>
+        </HMatjet>
+        <HMatjet>
+            <DataKoha>15-DEC-2019 5:00:00 PM</DataKoha>
+            <NiveliUjit>41</NiveliUjit>
+            <PrurjaUjit>2.2</PrurjaUjit>
+        </HMatjet>
+    </TeDhenatHidrometrike>
+    
+    <Zhurma id="1">
+        <Data_Koha>17-DEC-2019 07:00:00 AM</Data_Koha>
+        <TipiPranuesit>Vendbanime Rurale</TipiPranuesit>
+        <VleraZhurmes>30</VleraZhurmes>
+    </Zhurma>
+    <Zhurma id="2">
+        <Data_Koha>17-DEC-2019 08:00:00 AM</Data_Koha>
+        <TipiPranuesit>Vendbanime Urbane</TipiPranuesit>
+        <VleraZhurmes>40</VleraZhurmes>
+    </Zhurma>
+    <Zhurma id="3">
+        <Data_Koha>17-DEC-2019 09:00:00 AM</Data_Koha>
+        <TipiPranuesit>Vendbanime Industriale</TipiPranuesit>
+        <VleraZhurmes>50</VleraZhurmes>
+    </Zhurma>
+    
+</InstitutiHidrometeorogjik>

@@ -65,12 +65,6 @@ SELECT C.Vendi,N.Koncentrimi,
 FROM Cilesia_Ajrit C, TABLE (C.Ndotja) N
 WHERE N.Koncentrimi > 50;
 
-SELECT E.TempTID,
-              E.StacioniID,
-              T.Data_Koha,
-              T.Temperatura_Tokes,
-              T.Thellesia_Tokes
-FROM Temperatura_Tokes E, TABLE(E.Temperatura) T;
 
 /*****    R A N K I N G    *****/
     SELECT ZId, Data_Koha, Tipi_Pranuesit, Vlera_Zhurmes, 
@@ -78,6 +72,14 @@ FROM Temperatura_Tokes E, TABLE(E.Temperatura) T;
                  RANK() OVER (ORDER BY Vlera_Zhurmes DESC) AS RNK1,
                  DENSE_RANK() OVER (ORDER BY Vlera_Zhurmes DESC) AS DRNK
     FROM Zhurma;
+
+
+SELECT E.TempTID,
+              E.StacioniID,
+              T.Data_Koha,
+              T.Temperatura_Tokes,
+              T.Thellesia_Tokes
+FROM Temperatura_Tokes E, TABLE(E.Temperatura) T;
 
 
 SELECT S.hidroStacioniID,
@@ -96,7 +98,7 @@ DECLARE
     CURSOR Stacionet_Hidrometrike_Cursor IS
     SELECT S.Lumi
     FROM Stacionet_Hidrometrike S
-    WHERE S.Pellgu_Lumor = 'Drini i Bardhï¿½';
+    WHERE S.Pellgu_Lumor = 'Drini i Bardhë';
 BEGIN 
     OPEN Stacionet_Hidrometrike_Cursor;
     LOOP
@@ -106,6 +108,8 @@ BEGIN
     END LOOP;
     CLOSE Stacionet_Hidrometrike_Cursor;
 END;
+
+
 
 SELECT H.HId,
               H.hidroStacioniID,
@@ -141,5 +145,10 @@ SELECT Pellgu_Lumor, count(*) as "Numri i lumenjve"
 FROM Stacionet_hidrometrike
 GROUP BY Pellgu_Lumor
 HAVING Pellgu_Lumor <> 'Lepenci'
+
+--Te gjenden ndotesite(koncentrimi, vleramax) ne Prishtine ku koncentrimi ka tejkaluar vlerenMax
+select n.ndotesi, n.koncentrimi, n.VleraMax_Lejueshme
+from Cilesia_Ajrit c, Table(c.Ndotja) n 
+where c.vendi = 'Prishtinë' and n.koncentrimi > vleramax_lejueshme
 
 

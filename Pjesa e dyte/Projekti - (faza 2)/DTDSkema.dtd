@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT InstitutiHidrometeorogjik (StacionetMeteorologjike+, TeDhenatKlimatologjike+, 
+                    TemperaturaTokes+, StacionetHidrometrike+, TeDhenatHidrometrike+, Zhurma+)>
+                    
+<!ELEMENT StacionetMeteorologjike ((EmriStacionit, Kordinatat, LartesiaMbidetare, PellguLumor))+>  
+<!ATTLIST StacionetMeteorologjike 
+    id CDATA #REQUIRED>
+<!ELEMENT EmriStacionit (#PCDATA)>
+<!ELEMENT Kordinatat (Gjeresia_Gjeografike, Gjatesia_Gjeografike)>
+<!ELEMENT Gjeresia_Gjeografike (#PCDATA)*>
+<!ELEMENT Gjatesia_Gjeografike (#PCDATA)*>
+<!ELEMENT LartesiaMbidetare (#PCDATA)*>
+<!ELEMENT PellguLumor (#PCDATA)>
+
+<!ELEMENT TeDhenatKlimatologjike (Kid, StacioniID, KMatje+, Insolacioni, Vranesirat)>
+<!ELEMENT Kid (#PCDATA)>
+<!ELEMENT StacioniID (#PCDATA)>
+<!ELEMENT KMatje (Koha, Temperatura, Shtypja_Ajrit, Lageshtia_Ajrit, Reshje_Shiu, Reshje_Bore)+>
+<!ATTLIST KMatje 
+    data CDATA #REQUIRED>
+<!ELEMENT Koha (#PCDATA)>
+<!ELEMENT Temperatura (#PCDATA)>
+<!ELEMENT Shtypja_Ajrit (#PCDATA)>
+<!ELEMENT Lageshtia_Ajrit (#PCDATA)>
+<!ELEMENT Reshje_Shiu (#PCDATA)>
+<!ELEMENT Reshje_Bore (#PCDATA)>
+<!ELEMENT Insolacioni (#PCDATA)>
+<!ELEMENT Vranesirat (#PCDATA)>
+
+<!ELEMENT TemperaturaTokes (TempID, StacionId, Temperaturat*)>
+<!ELEMENT Temperaturat (Data-Koha, Temperatura_Tokes, Thellesia_Tokes)*>
+<!ELEMENT StacionId (#PCDATA)>
+<!ELEMENT TempID (#PCDATA)>
+<!ELEMENT Data-Koha (#PCDATA)*>
+<!ELEMENT Temperatura_Tokes (#PCDATA)>
+<!ELEMENT Thellesia_Tokes (#PCDATA) >
+
+
+<!ELEMENT StacionetHidrometrike (Pellgu-Lumor, Emri-Stacionit, Lumi, Kordinatat, Lartesia_Mbidetare)>
+<!ELEMENT Pellgu-Lumor (#PCDATA) >
+<!ELEMENT Emri-Stacionit (#PCDATA) >
+<!ELEMENT Lumi (#PCDATA) >
+<!ELEMENT Lartesia_Mbidetare (#PCDATA) >
+<!ATTLIST StacionetHidrometrike 
+    id CDATA #REQUIRED>
+
+<!ELEMENT TeDhenatHidrometrike (HidroStacioniID, DistancaNgaGryka, SiperfaqjaUjembledhese, HMatjet+) >
+<!ELEMENT HidroStacioniID (#PCDATA) >
+<!ELEMENT DistancaNgaGryka (#PCDATA) >
+<!ELEMENT SiperfaqjaUjembledhese (#PCDATA) >
+<!ELEMENT HMatjet (DataKoha, NiveliUjit, PrurjaUjit) >
+<!ELEMENT DataKoha (#PCDATA) >
+<!ELEMENT NiveliUjit (#PCDATA) >
+<!ELEMENT PrurjaUjit (#PCDATA) >
+<!ATTLIST TeDhenatHidrometrike 
+    id CDATA #REQUIRED>
+    
+<!ELEMENT Zhurma (Data_Koha, TipiPranuesit, VleraZhurmes) >
+<!ELEMENT Data_Koha (#PCDATA) >
+<!ELEMENT TipiPranuesit (#PCDATA) >
+<!ELEMENT VleraZhurmes (#PCDATA) >
+<!ATTLIST Zhurma
+    id CDATA #REQUIRED>
